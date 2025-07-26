@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2em;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 2em;
+}
+form label {
+  display: block;
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+input {
+  padding: 0.5em;
+  font-size: 1em;
+  width: 80px;
+  margin-left: 0.5em;
+}
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin: 0.5em;
+}
+#timer {
+  font-size: 4em;
+  margin: 1em 0;
+  font-weight: bold;
+}
+#progressContainer {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  margin-top: 1em;
+}
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #007bff;
+  transition: width 0.5s ease;
+}
+#status {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+#repInfo {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+body.swim {
+  background: #e0f7fa;
+}
+body.rest {
+  background: #fce4ec;
+}

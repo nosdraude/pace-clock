@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pace Clock</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🏊‍♂️ Swim Pace Clock</h1>
+    <form id="configForm">
+      <label>🏁 Reps: <input type="number" id="reps" value="4" /></label>
+      <label>⏱️ Goal (sec): <input type="number" id="goalTime" value="30" /></label>
+      <label>🛑 Rest (sec): <input type="number" id="restTime" value="15" /></label>
+      <div class="buttons">
+        <button type="submit">Start Set</button>
+        <button type="button" id="pauseBtn">Pause</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+    <div id="status">Status: Ready</div>
+    <div id="repInfo">Rep 0 of 0</div>
+    <div id="timer">0</div>
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+    </div>
+    <audio id="startTone" src="start.mp3" preload="auto"></audio>
+    <audio id="swimTone" src="swim.mp3" preload="auto"></audio>
+    <audio id="restTone" src="rest.mp3" preload="auto"></audio>
+    <audio id="endTone" src="end.mp3" preload="auto"></audio>
+  </div>
+</body>
+</html>
